@@ -1,0 +1,11 @@
+<meta charset="UTF-8">
+<script>
+    //Peça para o usuário informar o preço de um produto e também informar qual a porcentagem de desconto que será aplicado no preço do produto. Faça o cálculo do preço final do produto após aplicar a porcentagem de desconto e apresente o resultado.
+
+    const precoProduto = Number(prompt("Informe o preço do produto:").trim().replace(",", "."));
+    const descontoProduto = Number(prompt("Informe o desconto do produto").trim().replace(",", "."));
+
+    const resultado = precoProduto - (precoProduto * descontoProduto/100);
+
+    document.write("O preço do produto é: " + resultado.toFixed(2).replace(".", ","));
+</script>

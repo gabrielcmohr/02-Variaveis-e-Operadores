@@ -1,0 +1,15 @@
+<meta charset="UTF-8">
+<script>
+    //Peça para o usuário informar uma data em dias com horas, minutos e segundos e retorne a data em segundos.
+
+    const dias = prompt("Dias:").trim();
+    const horas = prompt("horas:").trim();
+    const minutos = prompt("minutos").trim();
+    const segundos = prompt("segundos").trim();
+
+    const segundosr = dias * 86400 + horas * 3600
+ + minutos * 60 + segundos;
+
+    document.write(segundosr + " Segundos.");
+
+</script>

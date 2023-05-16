@@ -1,0 +1,11 @@
+<meta charset="UTF-8">
+
+<script>
+    //Peça para o usuário informar uma temperatura em graus Celsius. Converta e apresente a temperatura em graus Fahrenheit
+
+    const celsius = Number(prompt("Informe a temperatura em Celsius:").trim().replace(",", "."));
+
+    const convert = (celsius * 9/5) + 32;
+
+    document.write(convert.toFixed(1).replace(".", ",") + " Graus Fahrenheit");
+</script>

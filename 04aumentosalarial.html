@@ -1,0 +1,12 @@
+<meta charset="UTF-8">
+<script>
+    //Peça para o usuário informar o salário atual e a porcentagem de aumento. Faça o cálculo do salário final após o aumento baseado na porcentagem informada e apresente o resultado.
+
+    let salarioAtual = Number(prompt("Informe seu salário atual:").trim().replace(",", "."));
+    const porcetagemAumento = Number(prompt("Porcentagem de aumento").trim().replace(",", "."));
+
+    const resultado = Number(salarioAtual) * Number((porcetagemAumento / 100));
+    const resultado2 = Number(resultado) + Number(salarioAtual);
+
+    document.write("Seu salário com aumento ficara: " + resultado2.toFixed(2).replace(".", ","));
+</script>

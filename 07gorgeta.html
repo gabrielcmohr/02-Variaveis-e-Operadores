@@ -1,0 +1,12 @@
+<meta charset="UTF-8">
+<script>
+    //Peça para o usuário informar qual foi o preço do jantar. Calcule 10% da gorjeta e apresente o preço total que deverá pagar para o restaurante e apresente o resultado.
+
+    const jantar = Number(prompt("Qual o valor do jantar?").trim().replace(",", "."));
+
+    const gorjeta = jantar / 10;
+
+    const total = jantar + gorjeta;
+
+    document.write("O jantar ficou " + jantar.toFixed(2).replace(".", ",") + ". e a gorjeta " + gorjeta.toFixed(2).replace(".", ",") + " Reais" + "e o total foi " + total.toFixed(2).replace(".", ","));
+</script>
